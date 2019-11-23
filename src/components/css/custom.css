@@ -1,0 +1,233 @@
+html{
+    scroll-behavior: smooth;
+}
+div{
+    font-family: 'Kanit', sans-serif;
+}
+#header-menu{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 0px;
+    transition: .8s;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0.5));
+    z-index: 1000;
+    color: #f0f0f0;
+    font-weight: 700;
+}
+.nav-header-menu:hover{
+    color: #DCD427;
+}
+.shopping-card-style{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.style-center{
+    display: flex;
+    justify-content: center;
+}
+.title-page{
+    font-size: 48px;
+    font-weight: 700;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+.title-login{
+    font-weight: 700;
+}
+.title-register{
+    font-weight: 700;
+}
+.subTitle-page{
+    font-size: 28px;
+    font-weight: 700;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+.iconArrowDown{
+    position: fixed;
+    bottom: 20px;
+}
+.section-first{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('../../images/army-background.jpg');
+    /* background-color: #000000; */
+}
+.section-second{
+    height: 100%;
+    background-color: #000000;
+    padding: 40px;
+}
+.money-card-style{
+    width: 960px;
+}
+.money-card-category-box{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    width: 80%;
+    height: 160px;
+    cursor: pointer;
+}
+.money-card-category-box:hover{
+    border: 3px solid #FF0505;
+    color: #FF0505;
+}
+.section-second-box{
+    background-color: #DCD427;
+    height: 300px;
+    width: 200px;
+    /* border-radius: 25px; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 500ms;
+}
+.section-second-box:hover{
+    width: 200px;
+    background-color: #FF0505;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.title-section-second{
+    color: #f0f0f0;
+    font-size: 32px;
+    font-weight: 700;
+}
+.section-third{
+    height: 100%;
+    background-color: #DCD427;
+    padding: 40px;
+}
+.section-third-box{
+    background-color: #f0f0f0;
+    height: 300px;
+    width: 200px;
+    /* border-radius: 25px; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+.title-section-third{
+    color: #f0f0f0;
+    font-size: 32px;
+}
+.button-buy{
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-image: #f0f0f0;
+}
+.button-buy:hover{
+    color: #f0f0f0;
+    background-color: #ff0000;
+}
+.button-add-card{
+    width: 150px;
+    height: 40px;
+    background-color: #DCD427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-add-buy{
+    width: 150px;
+    height: 40px;
+    background-color: #ff0000;
+    color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-facebook{
+    width: 100%;
+    height: 50px;
+    background-color: #3b5998 !important;
+    color: #F0F0F0 !important;
+}
+.btn-google{
+    width: 100%;
+    height: 50px;
+    background-color: #DB4437 !important;
+    color: #F0F0F0 !important;
+}
+.btn-login{
+    width: 100%;
+    height: 50px;
+    background-color: #DCD427 !important;
+}
+.modal-money-card-style{
+    height: 80%;
+    width: 1000px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 475px) {
+    .modal-money-card-style{
+        width: 300px;
+    }
+}
+
+/* cursor */
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: grab;}
+.grabbing {cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
