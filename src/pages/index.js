@@ -49,7 +49,9 @@ const IndexPage = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
   };
   return (
     <Layout>
@@ -160,7 +162,7 @@ const IndexPage = () => {
                 <div className="title-section-second">Cash card</div>
               </div>
             </div>
-            <Slider {...settings} style={{ backgroundColor: 'green' }}>
+            <Slider {...settings} style={{ height: 320 }}>
               {
                 menuCardList ? (
                   menuCardList.map((list, index) => (
@@ -168,7 +170,7 @@ const IndexPage = () => {
                       <div className="section-second-box">
                         <div>
                           <div className="text-center">{list.name_card_category}</div>
-                          <img src={trueMoney} width="100%" height="150" style={{ objectFit: 'contain' }} />
+                          <img src={`https://ttgammestore.com/image/cardCategory/${list.image_card_category}`} width="100%" height="150" style={{ objectFit: 'contain' }} />
                           <div className="style-center">
                             <button className="button-buy" onClick={() => handleSelectMoneyCard(true, list.id, list.name_card_category)}>Select</button>
                           </div>
