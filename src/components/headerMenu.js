@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Drawer from "react-drag-drawer"
 import facebookLogo from "../images/icon-facebook-logo.png"
 import { apiGatewayInstance } from "../connect/createApi"
+import jwt_decode from "jwt-decode"
 
 const HeaderMenu = () => {
     useEffect(() => {
@@ -52,8 +53,11 @@ const HeaderMenu = () => {
         formDataLogin.append('emailUser', logEmail);
         formDataLogin.append('passwordUser', logPassword);
         apiGatewayInstance.post('/api/checkLogin', formDataLogin)
-            .then(() => {
-                console.log('login success')
+            .then((response) => {
+                console.log('login success', response.data)
+                const resToken = response.data.token
+                const decoded = jwt_decode(resToken);
+                console.log('token authen', decoded)
             })
     }
 
