@@ -86,7 +86,7 @@ const HeaderMenu = () => {
                         </div>
                         <div style={{ display: 'flex' }}>
                             <div className="mr-2 nav-header-menu">
-                                <a className="pointer" onClick={trueMoneyFunction}>True Money</a>
+                                <a className="pointer" onClick={trueMoneyFunction}>Cash card</a>
                             </div>
                             {/* <div className="mr-2 text-bold nav-header-menu">
                                 <a className="pointer" onClick={gemeCardFunction}>Game Card</a>
@@ -103,12 +103,17 @@ const HeaderMenu = () => {
                 onRequestClose={() => setStatusModalLogin(false)}
             >
                 <div className="modal-money-card-style">
-                    <div className="title-login">LOGIN</div>
+                    {/* desktop */}
                     <div className="d-none d-lg-flex">
-                        <div className="row">
+                        <form onSubmit={handleLoginMember} className="w-100">
                             <div className="col">
-                                <form onSubmit={handleLoginMember}>
-                                    <div>Member</div>
+                                <div className="row justify-content-end">
+                                    <span className="pointer" onClick={() => setStatusModalLogin(false)}>&times;</span>
+                                </div>
+                            </div>
+                            <div className="style-center">
+                                <div style={{ width: 600 }}>
+                                    <div className="title-login text-center">LOGIN</div>
                                     <div className="mt-2">
                                         <input
                                             class="form-control"
@@ -135,25 +140,20 @@ const HeaderMenu = () => {
                                     <div className="mt-2">
                                         <button type="submit" class="btn btn-login">Login</button>
                                     </div>
-                                </form>
-                            </div>
-                            <div className="col">
-                                <div>Login with</div>
-                                <div className="mt-2">
-                                    <button type="submit" class="btn btn-facebook">
-                                        <div>Facebook</div>
-                                    </button>
-                                </div>
-                                <div className="mt-2">
-                                    <button type="submit" class="btn btn-google">Google</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                    {/* mobile */}
                     <div className="d-flex d-lg-none">
                         <form onSubmit={handleLoginMember} className="w-100">
+                            <div className="col">
+                                <div className="row justify-content-end">
+                                    <span className="pointer" onClick={() => setStatusModalLogin(false)}>&times;</span>
+                                </div>
+                            </div>
                             <div>
-                                <div>Member</div>
+                            <div className="title-login text-center">LOGIN</div>
                                 <div className="mt-2">
                                     <input
                                         class="form-control"
@@ -190,11 +190,17 @@ const HeaderMenu = () => {
                 onRequestClose={() => setStatusModalRegister(false)}
             >
                 <div className="modal-money-card-style">
-                    <div className="title-register">Create Account</div>
+                    {/* desktop */}
                     <div className="d-none d-lg-flex">
-                        <div className="row">
+                        <form onSubmit={handleRegisterMember} className="w-100">
                             <div className="col">
-                                <form onSubmit={handleRegisterMember}>
+                                <div className="row justify-content-end">
+                                    <span className="pointer" onClick={() => setStatusModalRegister(false)}>&times;</span>
+                                </div>
+                            </div>
+                            <div className="style-center">
+                                <div style={{ width: 600 }}>
+                                    <div className="title-register text-center">Create Account</div>
                                     <div className="mt-2">
                                         <input
                                             class="form-control"
@@ -243,21 +249,19 @@ const HeaderMenu = () => {
                                     <div className="mt-2">
                                         <button type="submit" class="btn btn-login">Sign Up</button>
                                     </div>
-                                </form>
-                            </div>
-                            <div className="col">
-                                <div>Sign Up with</div>
-                                <div className="mt-2">
-                                    <button type="submit" class="btn btn-facebook">Facebook</button>
-                                </div>
-                                <div className="mt-2">
-                                    <button type="submit" class="btn btn-google">Google</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                    {/* mobile */}
                     <div className="d-flex d-lg-none">
                         <form onSubmit={handleRegisterMember} className="w-100">
+                            <div className="col">
+                                <div className="row justify-content-end">
+                                    <span className="pointer" onClick={() => setStatusModalRegister(false)}>&times;</span>
+                                </div>
+                            </div>
+                            <div className="title-login text-center">Create Acccount</div>
                             <div className="mt-2">
                                 <input
                                     class="form-control"
