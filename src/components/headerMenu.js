@@ -86,7 +86,7 @@ const HeaderMenu = () => {
                         </div>
                         <div style={{ display: 'flex' }}>
                             <div className="mr-2 nav-header-menu">
-                                <a className="pointer" onClick={trueMoneyFunction}>Cash card</a>
+                                <a className="pointer" onClick={trueMoneyFunction}>Cash</a>
                             </div>
                             {/* <div className="mr-2 text-bold nav-header-menu">
                                 <a className="pointer" onClick={gemeCardFunction}>Game Card</a>

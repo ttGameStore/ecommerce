@@ -189,9 +189,11 @@ div{
     }
     .section-second{
         height: 100vh;
-        background-color: #DB4437;
         padding: 40px;
     }
+    /* .section-second-box{
+        width: 100%;
+    } */
 }
 
 /* cursor */
